@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 struct ImageStitcher {
@@ -146,3 +147,5 @@ struct ImageStitcher {
     }
     
 }
+
+#endif

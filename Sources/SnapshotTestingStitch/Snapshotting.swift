@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 import SnapshotTesting
 import SnapshotTestingHEIC
@@ -146,3 +147,5 @@ public extension Snapshotting where Format == UIImage {
         }
     }
 }
+
+#endif

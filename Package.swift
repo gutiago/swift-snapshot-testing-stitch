@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SnapshotTestingStitch",
-    platforms: [.iOS(.v15), .macOS(.v14)],
+    platforms: [.iOS(.v15), .macOS(.v10_15)],
     products: [
         .library(
             name: "SnapshotTestingStitch",
@@ -13,11 +13,9 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(name: "swift-snapshot-testing",
-                 url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
+        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
                  from: "1.18.3"),
-        .package(name: "SnapshotTestingHEIC",
-                 url: "https://github.com/alexey1312/SnapshotTestingHEIC.git",
+        .package(url: "https://github.com/alexey1312/SnapshotTestingHEIC.git",
                  from: "1.5.1"),
     ],
     targets: [
